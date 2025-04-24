@@ -1,0 +1,55 @@
+{
+  "name": "clay",
+  "displayName": "Clay",
+  "description": "Clay is a REPL-friendly Clojure tool for data visualization and literate programming.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BetterThanTomorrow/calva.git"
+  },
+  "version": "0.0.1",
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "workspaceContains:**/project.clj",
+    "workspaceContains:**/deps.edn"
+  ],
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Data Science"
+  ],
+  "keywords": [
+    "Clojure",
+    "Visualization",
+    "Data Science",
+    "Literate Programming",
+    "REPL"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "clay.showTopLevelForm",
+        "title": "Clay show top level form"
+      },
+      {
+        "command": "clay.makeFile",
+        "title": "Clay make file"
+      }
+    ],
+    "keybindings": [
+      {
+        "key": "alt+c",
+        "command": "clay.showTopLevelForm"
+      },
+      {
+        "key": "alt+shift+c",
+        "command": "clay.makeFile"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/vscode": "^1.99.1",
+    "typescript": "^5.8.3"
+  }
+}
