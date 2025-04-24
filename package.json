@@ -34,6 +34,10 @@
       {
         "command": "clay.makeFile",
         "title": "Clay make file"
+      },
+      {
+        "command": "clay.watch",
+        "title": "Clay watch"
       }
     ],
     "keybindings": [
@@ -44,6 +48,10 @@
       {
         "key": "alt+shift+c",
         "command": "clay.makeFile"
+      },
+      {
+        "key": "alt+shift+w",
+        "command": "clay.watch"
       }
     ]
   },

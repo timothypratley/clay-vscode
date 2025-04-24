@@ -43,6 +43,7 @@ export function activate(context: vscode.ExtensionContext) {
   console.log('Congratulations, your extension "clay" is now active!');
   register('clay.showTopLevelForm', ',');
   register('clay.makeFile', 'n');
+  register('clay.watch', 'w');
 }
 
 export function deactivate() {}
